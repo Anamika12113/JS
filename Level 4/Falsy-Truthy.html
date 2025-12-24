@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Falsy and Truthy</title>
+  </head>
+  <body>
+    <script>
+      let age = 21;
+      console.log(age);
+      if (age) {
+        console.log("you are eligible for driving");
+      } else {
+        console.log(`you're ajooba in earth`);
+      }
+
+       age = null;
+      console.log(age);
+      if (age) {
+        console.log("you are eligible for driving");
+      } else {
+        console.log("you are ajooba");
+      }
+
+       age = "";
+      console.log(age);
+      if (age) {
+        console.log("you are eligible for driving");
+      } else {
+        console.log("you are ajooba");
+      }
+
+       age = 6 / "cat";
+      console.log(age);
+      if (age) {
+        console.log("you are eligible for driving");
+      } else {
+        console.log("you are ajooba");
+      }
+    </script>
+  </body>
+</html>
