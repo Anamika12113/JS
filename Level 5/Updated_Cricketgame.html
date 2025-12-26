@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cricket Game</title>
+    <style>
+      body {
+        text-align: center;
+        color:brown ;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Bat Ball Stump Game</h3>
+    <button
+      onclick= "generateComputerChoice ();
+        if (computerChoice === 'Ball') {
+           resultMsg = 'User is won.';
+        } else if (computerChoice === 'Bat') {
+           resultMsg = ` tie's b/w computer and the user`;
+        }
+        else if (computerChoice === 'Stump') {
+           resultMsg = 'computer has won';
+        }
+
+        alert(`You have chosen Bat. Computer choice is ${computerChoice} and ${resultMsg}`);"
+    >
+      Bat
+    </button>
+
+    <button
+      onclick="
+           generateComputerChoice(); 
+        if (computerChoice === 'Ball') {
+           resultMsg = `'tie's  b/w computer and the user`;
+        } else if (computerChoice === 'Bat') {
+           resultMsg = 'computer has won';
+        }
+        else if (computerChoice === 'Stump') {
+           resultMsg = 'User is won.';
+        }
+
+        alert(`You have chosen Ball. Computer choice is ${computerChoice} and ${resultMsg}`);"
+    >
+      Ball
+    </button>
+
+    <button
+      onclick="
+          generateComputerChoice();
+        if (computerChoice === 'Ball') {
+           resultMsg = 'computer has own';
+        } else if (computerChoice === 'Bat') {
+           resultMsg = 'User is won.';
+        }
+        else if (computerChoice === 'Stump') {
+           resultMsg = `'tie's  b/w computer and the user`;
+        }
+
+        alert(`You have chosen Stump. Computer choice is ${computerChoice} and ${resultMsg}`);">Stump</button>
+        <script>
+                let computerChoice;
+                function  generateComputerChoice() {
+                       randomNumber = Math.random() * 3;
+        if (randomNumber > 0 && randomNumber <= 1) {
+             computerChoice = 'Bat';
+           // console.log('computer choose the Bat');
+        } else if (randomNumber > 1 && randomNumber <= 2) {
+             computerChoice = 'Ball';
+          //  console.log('computer choose the Ball');
+        } else  {
+             computerChoice = 'Stump';
+           // console.log('computer choice the Stump');
+        }
+    }
+        </script>
+  </body>
+</html>
