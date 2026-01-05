@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object_Refrence</title>
+    </head>
+    <body>
+        <script>
+            let x= 5;
+            let y= 9;
+            console.log(`x=${x} , y=${y}`);
+            console.log(`x=${10} , y=${9}`);
+
+
+            let a = {num: 4};
+            let b = a;
+            console.log(`a=${a.num} , b=${b.num}`);
+
+            b.num = 6;
+            console.log(`a=${a.num} , b=${b.num}`);
+
+            let p = {pop: 'abcddsf'};
+            let q = {pop: 'abcddsf'};
+            console.log( p == q);
+        </script>
+    </body>
+</html>
