@@ -67,10 +67,13 @@
            resultMsg = 'User is won.';
         }
 
-        alert(`You have chosen Ball. Computer choice is ${computerChoice} and ${resultMsg}`);">Ball</button>
-    
+        alert(`You have chosen Ball. Computer choice is ${computerChoice} and ${resultMsg}`);"
+    >
+      Ball
     </button>
-    <button onclick="
+
+    <button
+      onclick="
           let randomNumber = Math.random() * 3;
          let computerChoice;
         if (randomNumber > 0 && randomNumber <= 1) {
@@ -87,14 +90,17 @@
 
         let resultMsg;
         if (computerChoice === 'Ball') {
-           resultMsg = `'tie's  b/w computer and the user`;
+           resultMsg = 'computer has own';
         } else if (computerChoice === 'Bat') {
-           resultMsg = 'computer has won';
-        }
-        else if (computerChoice === 'Stump') {
            resultMsg = 'User is won.';
         }
+        else if (computerChoice === 'Stump') {
+           resultMsg = `'tie's  b/w computer and the user`;
+        }
 
-        alert(`You have chosen Ball. Computer choice is ${computerChoice} and ${resultMsg}`);">Stump</button>
+        alert(`You have chosen Stump. Computer choice is ${computerChoice} and ${resultMsg}`);"
+    >
+      Stump
+    </button>
   </body>
 </html>
