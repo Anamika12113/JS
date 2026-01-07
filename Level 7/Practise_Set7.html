@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PractiseSet_7</title>
+    </head>
+    <body>
+        <h3 id="wishes"></h3>
+        <script>
+            function doGreeting(personName = 'Dear') {
+               let date = new Date();
+             let hours = date.getHours();
+            let heading = document.querySelector('#wishes'); 
+            
+    
+         
+            if(hours > 5 && hours < 12) {
+                heading.innerText = `Good Morning ${personName}`;
+            } else if (hours > 12 && hours < 18) {
+                heading.innerText = `Good Afternoon ${personName}`;
+            } else {
+                heading.innerText = `Good Night ${personName}`;
+            }
+        }
+           doGreeting('Riya');
+        </script>
+    </body>
+</html>
